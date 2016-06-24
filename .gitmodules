@@ -1,0 +1,6 @@
+[submodule "subs/backlight"]
+	path = subs/backlight
+	url = git@github.com:realthunder/hmo_pcb_backlight.git
+[submodule "subs/eyepiece/breakout"]
+	path = subs/eyepiece/breakout
+	url = git@github.com:realthunder/hmo_pcb_ibk.git
