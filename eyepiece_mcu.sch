@@ -182,51 +182,51 @@ L R_Small R?
 U 1 1 576C2B23
 P 6700 2650
 F 0 "R?" H 6730 2670 50  0000 L CNN
-F 1 "R_Small" H 6730 2610 50  0000 L CNN
+F 1 "10K" H 6730 2610 50  0000 L CNN
 F 2 "" H 6700 2650 50  0000 C CNN
 F 3 "" H 6700 2650 50  0000 C CNN
 	1    6700 2650
 	1    0    0    -1  
 $EndComp
-Text HLabel 7450 2900 2    60   Input ~ 0
+Text HLabel 7450 2900 2    60   Output ~ 0
 VREG
 $Comp
 L R_Small R?
 U 1 1 576C2D92
 P 7200 2900
 F 0 "R?" V 7100 2850 50  0000 L CNN
-F 1 "R_Small" V 7300 2800 50  0000 L CNN
+F 1 "20K" V 7300 2800 50  0000 L CNN
 F 2 "" H 7200 2900 50  0000 C CNN
 F 3 "" H 7200 2900 50  0000 C CNN
 	1    7200 2900
 	0    1    1    0   
 $EndComp
-Text HLabel 6400 3050 2    60   Input ~ 0
+Text HLabel 6400 3050 2    60   Output ~ 0
 ~STEP_SLP
-Text HLabel 6400 3200 2    60   Input ~ 0
+Text HLabel 6400 3200 2    60   Output ~ 0
 STEP/SOL_EN
-Text HLabel 6400 3350 2    60   Input ~ 0
+Text HLabel 5800 5200 1    60   Input ~ 0
 LIGHT
-Text HLabel 6400 3500 2    60   Input ~ 0
+Text HLabel 6400 3500 2    60   Output ~ 0
 SCLK
 Text HLabel 7600 3650 2    60   Input ~ 0
 MISO
-Text HLabel 7200 4300 2    60   Input ~ 0
+Text HLabel 7200 4300 2    60   Output ~ 0
 MOSI/STEP_DIR/SOL_DIR
-Text HLabel 4800 2900 0    60   Input ~ 0
+Text HLabel 6050 6650 2    60   Output ~ 0
 BL_CS
-Text HLabel 4800 3050 0    60   Input ~ 0
+Text HLabel 4800 3050 0    60   Output ~ 0
 SHD_DRV
-Text HLabel 4800 3200 0    60   Input ~ 0
+Text HLabel 6400 3350 2    60   Output ~ 0
 MT_DIR
-Text HLabel 4800 3350 0    60   Input ~ 0
-MT_STOP
-Text HLabel 4800 3500 0    60   Input ~ 0
+Text HLabel 3800 2450 2    60   BiDi ~ 0
+MT_EN
+Text HLabel 4800 3500 0    60   Output ~ 0
 PWR_SEL
-Text HLabel 4800 3800 0    60   Input ~ 0
-SRV1
-Text HLabel 4800 3950 0    60   Input ~ 0
+Text HLabel 4800 3800 0    60   Output ~ 0
 SRV2
+Text HLabel 4800 3950 0    60   Output ~ 0
+SRV1
 Wire Wire Line
 	4600 1300 5700 1300
 Wire Wire Line
@@ -295,14 +295,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 4600 6400 4600
 Wire Wire Line
-	5500 5200 5500 4800
-Wire Wire Line
-	5500 4800 2600 4800
-Wire Wire Line
-	5650 5200 5650 4700
-Wire Wire Line
-	5650 4700 2600 4700
-Wire Wire Line
 	6400 3650 7600 3650
 Wire Wire Line
 	6400 3800 7050 3800
@@ -337,10 +329,50 @@ Wire Wire Line
 Connection ~ 7050 4100
 Wire Wire Line
 	6400 4600 6400 3950
-Text HLabel 5050 6550 0    60   Input ~ 0
+Text HLabel 4800 2900 0    60   Input ~ 0
 STEP_STOP
 Wire Wire Line
-	5050 6550 5350 6550
+	2600 4800 5500 4800
 Wire Wire Line
-	5350 6550 5350 6400
+	5500 4800 5500 5200
+Wire Wire Line
+	2600 4700 5350 4700
+Wire Wire Line
+	5350 4700 5350 5200
+Wire Wire Line
+	5650 6400 5650 6650
+Wire Wire Line
+	5650 6650 6050 6650
+Text HLabel 6050 6500 2    60   Output ~ 0
+~SHD_SLP
+Wire Wire Line
+	5800 6400 5800 6500
+Wire Wire Line
+	5800 6500 6050 6500
+$Comp
+L CONN_01X02 P?
+U 1 1 5784E1CA
+P 3450 2400
+F 0 "P?" H 3450 2250 50  0000 C CNN
+F 1 "CON_MT_STOP2" H 3450 2550 50  0000 C CNN
+F 2 "" H 3450 2400 50  0000 C CNN
+F 3 "" H 3450 2400 50  0000 C CNN
+	1    3450 2400
+	-1   0    0    -1  
+$EndComp
+Text Label 4800 3200 2    60   ~ 0
+~MT_DIR
+Wire Wire Line
+	3650 2350 4200 2350
+Wire Wire Line
+	3750 3350 4800 3350
+Wire Wire Line
+	3750 3350 3750 2450
+Connection ~ 3750 2450
+Wire Wire Line
+	3800 2450 3650 2450
+Wire Wire Line
+	4200 2350 4200 3200
+Wire Wire Line
+	4200 3200 4800 3200
 $EndSCHEMATC

@@ -4,3 +4,6 @@
 [submodule "subs/eyepiece/breakout"]
 	path = subs/eyepiece/breakout
 	url = git@github.com:realthunder/hmo_pcb_ibk.git
+[submodule "subs/eyepiece/mcu"]
+	path = subs/eyepiece/mcu
+	url = git@github.com:realthunder/hmo_icu.git
