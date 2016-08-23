@@ -7,3 +7,6 @@
 [submodule "subs/eyepiece/mcu"]
 	path = subs/eyepiece/mcu
 	url = git@github.com:realthunder/hmo_icu.git
+[submodule "subs/body"]
+	path = subs/body
+	url = git@github.com:realthunder/hmo_body.git

@@ -1,4 +1,4 @@
-update=06/23/16 16:26:27
+update=08/21/16 12:00:42
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,5 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=top
+LibName31=74xgxx
+LibName32=pololu
